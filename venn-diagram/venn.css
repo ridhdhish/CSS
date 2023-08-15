@@ -1,0 +1,176 @@
+.circle {
+  height: 300px;
+  width: 300px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+  grid-template-rows: repeat(2, 150px);
+}
+
+.circle-1 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.circle-2 {
+  /* margin-left: -100px; */
+  grid-column-start: 5;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.intersection {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.circle-1 > span {
+  width: 50%;
+  height: 100%;
+  float: left;
+  shape-outside: polygon(
+    100% 0%,
+    0% 0%,
+    0% 100%,
+    100% 100%,
+    75% 96%,
+    47% 90%,
+    25% 80%,
+    12% 70%,
+    5% 60%,
+    3% 50%,
+    5% 40%,
+    12% 30%,
+    25% 20%,
+    47% 10%,
+    62.66% 6.64%,
+    75% 4%
+  );
+}
+
+.circle-1 > span + span {
+  height: 100%;
+  width: 50%;
+  float: right;
+  shape-outside: polygon(
+    100% 0%,
+    20% 0%,
+    63.33% 11.67%,
+    49.33% 20.33%,
+    38% 30.33%,
+    31.67% 39.33%,
+    29.67% 47.33%,
+    29.33% 54%,
+    31.67% 61.33%,
+    37% 69%,
+    47.33% 77.67%,
+    57.34% 84%,
+    37.52% 94.72%,
+    100% 95%
+  );
+}
+
+.circle-1 > p {
+  text-align: left;
+}
+
+.circle-2 > p {
+  text-align: end;
+}
+
+.circle-2 > span {
+  float: left;
+  height: 100%;
+  width: 50%;
+  shape-outside: polygon(
+    0% 0%,
+    80% 0%,
+    38.67% 13.33%,
+    49.33% 19.33%,
+    59.33% 26.33%,
+    66.33% 34.67%,
+    70.33% 42.33%,
+    69.67% 51.67%,
+    69.67% 60%,
+    58.67% 72.33%,
+    38% 86.66%,
+    61.33% 94.33%,
+    0% 95%
+  );
+}
+
+.circle-2 > span + span {
+  height: 100%;
+  width: 50%;
+  float: right;
+  shape-outside: polygon(
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    0% 100%,
+    25% 96%,
+    53% 90%,
+    75% 80%,
+    88% 70%,
+    95% 60%,
+    97% 50%,
+    95% 40%,
+    88% 30%,
+    75% 20%,
+    53% 10%
+  );
+}
+
+.intersection > span {
+  width: 50%;
+  height: 100%;
+  float: left;
+  shape-outside: polygon(
+    0% 0%,
+    80% 0%,
+    96.67% 14.33%,
+    75.33% 23.99%,
+    64.33% 30.99%,
+    54.33% 40.67%,
+    52.33% 49.66%,
+    51.67% 56.67%,
+    58.67% 63.33%,
+    69.67% 73.66%,
+    100% 86.99%,
+    4.33% 100.33%
+  );
+}
+
+.intersection > span + span {
+  width: 50%;
+  height: 100%;
+  float: right;
+  shape-outside: polygon(
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    17% 91.67%,
+    4% 87.33%,
+    17% 83%,
+    29% 75.66%,
+    43% 66.66%,
+    51% 56.67%,
+    52% 45.67%,
+    46% 38.33%,
+    33% 24.67%,
+    9% 14.33%
+  );
+}
+
+.intersection > p {
+  text-align: center;
+}
